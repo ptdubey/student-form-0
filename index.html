@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h2>Student Registration Form</h2>
+        <form id="registration-form">
+          <div class="input-box">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-box">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="input-box">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="input-box">
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+              <option value="">Select Course</option>
+              <option value="BSc">BSc</option>
+              <option value="BA">BA</option>
+              <option value="BCom">BCom</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+              <option value="">Select Semester</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+            </select>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
